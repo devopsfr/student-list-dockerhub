@@ -1,5 +1,5 @@
 version: '2.1'
-
+# we need to run test to validate the builded image
 networks:
   test-net:
 
