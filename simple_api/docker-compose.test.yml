@@ -6,7 +6,7 @@ networks:
 services:
   sut:
     build:
-      context: ./simple_api
+      context: .
       dockerfile: Dockerfile
     command: /run_tests.sh
     volumes:
