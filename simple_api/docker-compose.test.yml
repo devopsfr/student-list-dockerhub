@@ -8,7 +8,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bash -c "nohup python /student_age.py & && /run_tests.sh" #/run_tests.sh
+    command: /run_tests.sh
     volumes:
       - ./student_age.json:/data/student_age.json
     networks:
