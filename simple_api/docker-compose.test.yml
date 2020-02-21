@@ -6,10 +6,10 @@ networks:
 services:
   sut:
     build:
-      context: ./simple_api
+      context: .
       dockerfile: Dockerfile
     command: /run_tests.sh
     volumes:
-      - ./simple_api/student_age.json:/data/student_age.json
+      - ./student_age.json:/data/student_age.json
     networks:
       - test-net
